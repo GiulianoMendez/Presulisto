@@ -51,5 +51,319 @@
     padding-left: 0% !important;
     padding-right: 0% !important;
 }
-.marneg{
+body {
+    font-size: 16px;
+    background-color: #D6D6D6;
+    font-family: 'Roboto-R'
+
+}
+#header-nav {
+    background-color: white;
+    border-radius: 3px;
+    border: 0;
+}
+#logo-img{
+    background: url("../img/Picture2.png") no-repeat ;
+    width: 100px;
+    height: 100px;
+    margin: 10px 15px 10px 0;
+}
+.navbar-brand h1 {
+    font-family: "Oleo Script", seriff;
+    color: black;
+    font-size: 1.5em;;
+    text-transform: uppercase;
+    font-weight: bold;;
+    text-shadow: 1px 1px 1px gray;
+    margin-top: 35px;
+    margin-bottom: 0;
+    line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+    text-decoration: none;
+}
+.navbar-brand p{
+    color: black;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+}
+#nav-list a{
+    font-family: "Roboto Slab Black";
+    font-size: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 10px;
+}
+#nav list a:hover{
+    background: #e8e8e8;
+}
+#nav-list a span{
+    font-size: 1.8em;
+}
+#phone{
+    margin-top: 5px;
+}
+
+.navbar-toggle {
+    position: relative;
+    float:  right;
+    padding: 9px 10px;
+    margin-top: 0px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    background-color: transparent;;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.navbar-toggle:focus{
+    outline:0;
+}
+.navbar-toggle .icon-bar{
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.navbar-nav{
+    margin: 7.5px -15px;
+}
+.navbar-nav>li>a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+@media (min-width: 768px){
+    .navbar-toggle{
+        display:none;
+    }
+    .navbar-brand h1 {
+
+    }
+}
+@media (min-width: 1200px){
+
+}
+@media (min-width: 992px) and (max-width: 1199px){
+
+}
+#Estudiantes, #Adultos{
+    height: 500px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#Estudiantes{
+    background: url("../img/Estudiantes.jpg.png");
+
+}
+#Adultos{
+    background: url("../img/Adultos.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Estudiantes:before{
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background: #fff;
+    opacity: 0;
+    transition: opacity .1s ease-out;
+}
+#Estudiantes:hover:before{
+    opacity: 0.76;
+}
+#Estudiantes .text-container {
+    width: inherit;
+    padding: 5px 15px;
+    color: #444;
+    position: absolute;
+    top: 100%;
+}
+#Estudiantes:hover .text-container {
+    top: 0;
+}
+#Estudiantes:before{
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background: #fff;
+    opacity: 0;
+    transition: opacity .1s ease-out;
+}
+#Estudiantes .text-container {
+    width: inherit;
+    padding: 5px 15px;
+    color: #444;
+    position: absolute;
+    top: 100%;
+}
+#Estudiantes:hover:before{
+    opacity: 0.76;
+}
+#Estudiantes:hover .text-container {
+    top: 0;
+}
+#Estudiantes h4{
+    font-family: "Roboto Black";
+    font-size: 50px;
+    margin-top: 25px;
+    text-align: center;
+    padding: 60px 0px 15px 25px;
+
+}
+#Estudiantes p{
+    text-align: center;
+    font-size: 20px;
+    font-family: "Roboto Medium";
+    margin-top: 15px;
+}
+
+#Adultos:before{
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background: #fff;
+    opacity: 0;
+    transition: opacity .1s ease-out;
+}
+#Adultos:hover:before{
+    opacity: 0.76;
+}
+#Adultos .text-container {
+    width: inherit;
+    padding: 5px 15px;
+    color: #444;
+    position: absolute;
+    top: 100%;
+}
+#Adultos:hover .text-container {
+    top: 0;
+}
+#Adultos:before{
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background: #fff;
+    opacity: 0;
+    transition: opacity .1s ease-out;
+}
+#Adultos .text-container {
+    width: inherit;
+    padding: 5px 15px;
+    color: #444;
+    position: absolute;
+    top: 100%;
+}
+#Adultos:hover:before{
+    opacity: 0.76;
+}
+#Adultos:hover .text-container {
+    top: 0;
+}
+#Adultos h4{
+    font-family: "Roboto Black";
+    font-size: 50px;
+    margin-top: 25px;
+    text-align: center;
+    padding: 60px 0px 15px 25px;
+}
+#Adultos p{
+    text-align: center;
+    font-size: 20px;
+    font-family: "Roboto Medium";
+    margin-top: 15px;
+}
+#ButtonRef {
+    alignment: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    background: black;
+    color: white;;
+    font-family: "Roboto Slab";
+    font-size: 15px;
+}
+h1{
+    font-family: revert;
+    size: 70px;
+    padding: 10px;
+}
+
+#CardsGroup{
+    margin: 15px;
+}
+
+#card1{
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid;
+    border-radius: 35px;
+}
+
+#card2{
+    padding:10px;
+    margin: 10px;
+    border: 3px solid;
+    border-radius: 35px;
+}
+
+#card3{
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid;
+    border-radius: 35px;
+}
+h5{
+    font-family: revert;
+    size: 30px;
+
+}
+
+p{
+    size: 20px;
+}
+
+@media screen and (max-width:320px ){
+    h1{
+        font-family: revert;
+        size: 35px;
+        padding: 5px;
+    }
+
+    #CardsGroup{
+        margin: 7px;
+    }
+
+    #card1{
+        padding: 5px;
+        margin: 5px;
+    }
+
+    #card2{
+        padding:5px;
+        margin: 5px;
+    }
+
+    #card3{
+        padding: 5px;
+        margin: 5px;
+    }
+    h5{
+        font-family: revert;
+        size: 7px;
+    }
+    p{
+        size: 5px;
+    }
 }

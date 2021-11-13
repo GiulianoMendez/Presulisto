@@ -1,37 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-6SMZME5BC6"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-6SMZME5BC6');
-    </script> -->
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/main.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700" rel="stylesheet"> -->
+    <link href='https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap' rel="stylesheet"
+    type="text/css">
     <title>Presulisto</title>
 </head>
 <body>
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-midnight oleo fs-4 fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light oleo fs-4 fixed-top align-items-center" style="background-color: #BACECD;">
             <div class="container-fluid">
-              <a class="navbar-brand mb-auto fs-4" href="#"> <img src="img/logo-black3.png" alt="" width="75" height="auto" class="img-fluid ">
+              <a class="navbar-brand mb-auto fs-4" href="#"> <img src="img/logo-black3.png" alt="" width="85" height="auto" class="img-fluid ">
                 Presulisto</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-1 d-flex">
+                <ul class="navbar-nav me-auto mb-2 d-flex">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                   </li>
@@ -81,9 +71,9 @@
                     </div>
                  </div>
             </div>
-            <div class="container-fluid">
+            <div class="container-fluid mb-3" style="background-color: #BACECD;">
                     <div class="row justify-content-center">
-                      <div class="col-md-4 mt-5 mx-auto">
+                      <div class="col-sm-4 mt-5 mx-auto mb-5">
                         <div class="card bg-crema mx-auto" style="width: 20rem;">
                             <!-- <img src="..." class="card-img-top" alt="..."> -->
                             <div class="card-body">
@@ -143,7 +133,7 @@
                           </div>
                       </div>
                       <div class="col-md-4 mt-5 mx-auto">
-                        <div class="card bg-crema mx-auto" style="width: 20rem;">
+                        <div class="card bg-crema mx-auto" style="width: 16rem;">
                             <!-- <img src="..." class="card-img-top" alt="..."> -->
                             <div class="card-body">
                               <h5 class="card-title text-center mb-3 fs-2 oleo">Beneficios</h5>
@@ -167,8 +157,71 @@
                 <ul class="button-Inicia-ya">
                     <p> Inicia Ya </p>
                 </ul> -->
-                
-    </main>
+      
+                <div id="main images" class="container mt-3">
+                  <div id="home tiles" class="row">
+                      <div class="col-lg-6 col-xs-12 mt-5">
+                          <a href="Planes.html"><div id="Estudiantes">
+                              <div class="text-container">
+                                  <h4>ESTUDIANTES</h4>
+                                  <p>Disfruta de un enfoque orientado hacia el aprendizaje de nuevos conceptos mientas
+                                  los pones en practica y comienza a cultuviar buenos habitos financieros desde el primer dia
+                                  </p>
+                                  <button type="button" class="btn btn-dark" id="ButtonRef">Aprender mas</button>
+                              </div>
+                          </div></a>
+                      </div>
+                      <div class="col-lg-6 col-xs-12 mt-5">
+                          <a href="Planes.html"><div id="Adultos">
+                              <div class="text-container">
+                              <h4>ADULTOS</h4>
+                              <p> Accede a funciones que te permitiran ahorrar inteligentemente como el escaneo y comparacion de productos
+                                  y hoza de una herramienta completa de gestion de gastos
+                              </p>
+                                  <button type="button" class="btn btn-dark" id="ButtonRef">Aprender mas</button>
+                              </div>
+                          </div></a>
+                      </div>
+                  </div>
+      
+              </div>
+              <div class="mt-5" style="background-color: #BACECD;">
 
+                <div>
+                  <h1 class="text-center mt-5 oleo">SOBRE PRESULISTO</h1>
+                </div>
+                
+                <div class="row row-cols-1 row-cols-md-3 g-4 " id="CardsGroup">
+                  <div class="col">
+                    <div class="card h-100" id="card1">
+                        <img src="img/idea.png">
+                        <div class="card-body" id="body1">
+                            <h5 class="card-title text-center">La idea</h5>
+                            <p class="card-text text-center ">Hemos notado la Crisis económica en el Perú
+                              y La deficiente educación financiera de los usuarios, esto causo desvalances economicos en algunos hogares. Asi que desarrollamos una app para realizar presupuestos</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100" id="card2">
+                        <img src="img/app.png" >
+                        <div class="card-body ">
+                          <h5 class="card-title text-center" >La ejeucion</h5>
+                          <p class="card-text text-center">Realizamos una aplicación móvil que permite realizar un presupuesto mensual en base a las necesidades del usuario</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100" id="card3">
+                        <img src="img/saving.png">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Nuestra meta</h5>
+                          <p class="card-text text-center">Brindar calidad y facilidad para poder controlar la economía doméstica</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    </main>
 </body>
 </html>
