@@ -1,1 +1,56 @@
+@font-face {
+    font-family: 'Oleo Sans';
+    src: url(../fonts/OleoScript-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto-R';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto-B';
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+.oleo{
+    font-family: 'Oleo Sans', sans-serif;
+}
+.roboto-r{
+    font-family: 'Roboto-R', sans-serif;
+}
+.roboto-b{
+    font-family: 'Roboto-B', sans-serif;
+}
 
+.bg-midnight{
+    background-color: #7A7A7A !important;
+}
+.bg-crema{
+    background-color: #EAE4DF !important;
+}
+.p1{
+    position:relative;
+    margin-top: 95px;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+}
+.p2{
+    position:absolute;
+    left:25%;
+    top:200px;
+    width: auto;
+    height: auto;
+    
+}
+.p3{
+    max-height: 100px;
+}
+.p4{
+    position: absolute;
+    padding-left: 25%;
+}
+.nopad{
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+}
+.marneg{
+    margin-top: -50%;
+}
