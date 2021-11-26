@@ -75,7 +75,7 @@ main{
     background-color: #414042;
 }
 .chart {
-    width: 60%; 
+    width: 75%; 
     min-height: 450px;
   }
 
@@ -97,6 +97,14 @@ main{
     top:-100px;
 }
 #about1{
+    position:relative;
+    top:-50px;
+}
+#videos1{
+    position:relative;
+    top:-100px;
+}
+#join1{
     position:relative;
     top:-50px;
 }
