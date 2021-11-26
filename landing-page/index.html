@@ -8,14 +8,16 @@
     <link href='https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap' rel="stylesheet"
     type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <title>Presulisto</title>
 </head>
 <body>
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light oleo fs-4 fixed-top align-items-center" style="background-color: #BACECD;">
+        <nav class="navbar navbar-expand-lg navbar-light oleo fs-4 fixed-top align-items-center" style="background-color: #5591eb;">
             <div class="container-fluid">
               <a class="navbar-brand mb-auto fs-4" href="#"> <img src="img/logo-black3.png" alt="" width="85" height="auto" class="img-fluid ">
                 Presulisto</a>
@@ -28,10 +30,13 @@
                     <a class="nav-link active" aria-current="page" href="#home1">Inicio</a>
                   </li>
                   <li class="nav-item">
+                    <a class="nav-link" href="#about1">Sobre Presulisto</a>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href="#planes1">Planes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#about1">Sobre el Start Up</a>
+                    <a class="nav-link" href="#precios1">Precios</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#contacto1">Contacto</a>
@@ -46,19 +51,78 @@
         <div id= "home1"></div>
         <div
           class="bg-image d-flex justify-content-center align-items-center"
-          style="background-image: url('img/fondo2.png'); height: 100vh;">
+          style="background-image: url('img/fondo2.png'); height: 100vh; width: auto;">
           <div class="position-relative">
 
             <h1 class="text-white text-center ">Comienza a ahorrar con un par de clics</h1> </br>
-            <button type="submit" class="btn btn-lg btn-success position-absolute start-50 translate-middle">Inicia Ya</button>
+            <button type="submit" class="btn btn-lg btn-primary position-absolute start-50 translate-middle">Inicia Ya</button>
+            <div class = "row"> </br> </br>
+            </div>
+            <div class = "row">  </br> 
+            </div>
+            <div class = "row justify-content-center">           
+              <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="http://play.google.com/" target = "_blank"class="text-white"><img src="img/google.svg" width="200px" height="auto" alt=""></a>
+                </li>
+              </br>
+                <li>
+                  <a href="https://www.apple.com/la/app-store/" target = "_blank" class="text-white"><img src="img/app-store.svg" width="200px" height="auto" alt=""></a>
+                </li>
+              </ul>
+            </div>
+            </div>
           </div>
             </div>
+                            <!-----------------------------------SOBRE PRESULISTO---------------------------------->
+                            <div id="about1"></div>
+                            <div id ="about"class="mt-5 mb-5 container-fluid" >
+                              <div>
+                                <h1 class="text-center mt-5 fs-1 oleo">Sobre Presulisto</h1>
+                              </div> 
+                              <div class="row row-cols-1 row-cols-md-3 g-4 " id="CardsGroup">
+                                <div class="col">
+                                  <div class="card h-100" id="card1">
+                                      <img src="img/idea.png"style ="border-radius: 35px">
+                                      <div class="card-body" id="body1">
+                                          <h5 class="card-title text-center">La idea</h5>
+                                          <p class="card-text text-center ">Hemos notado la Crisis económica en el Perú
+                                            y La deficiente educación financiera de los usuarios, esto causo desvalances economicos en algunos hogares. Asi que desarrollamos una app para realizar presupuestos</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="card h-100" id="card2">
+                                      <img src="img/app.png"style ="border-radius: 35px" >
+                                      <div class="card-body ">
+                                        <h5 class="card-title text-center" >La ejeucion</h5>
+                                        <p class="card-text text-center">Realizamos una aplicación móvil que permite realizar un presupuesto mensual en base a las necesidades del usuario</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="card h-100" id="card3">
+                                      <img src="img/saving.png"style ="border-radius: 35px">
+                                      <div class="card-body">
+                                        <h5 class="card-title text-center">Nuestra meta</h5>
+                                        <p class="card-text text-center">Brindar calidad y facilidad para poder controlar la economía doméstica</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+              
+                              <div class = "d-flex justify-content-center p-3">
+                                <div id="chart_div1" class="chart"></div>
+                          </div>
+                          <!-----------------------------------SOBRE PRESULISTO---------------------------------->
 
                             <!-----------------------------------TESTIMONIOS Y BENEFICIOS---------------------------------->
                             
-            <div class="container-fluid mb-3" style="background-color: #BACECD;">
+            <div class="container-fluid mb-3" style="background-color: rgb(202, 226, 241)">
                     <div class="row justify-content-center">
-                      <div class="col-sm-4 mt-5 mx-auto mb-5">
+                      <div class="col-md-4 mt-5 mx-auto mb-5">
                         <div class="card bg-crema mx-auto" style="width: 20rem;">
                             <!-- <img src="..." class="card-img-top" alt="..."> -->
                             <div class="card-body">
@@ -119,7 +183,6 @@
                       </div>
                       <div class="col-md-4 mt-5 mb-5 mx-auto">
                         <div class="card bg-crema mx-auto" style="width: 16rem;">
-                            <!-- <img src="..." class="card-img-top" alt="..."> -->
                             <div class="card-body">
                               <h5 class="card-title text-center mb-3 fs-2 oleo">Beneficios</h5>
                                 <ul class ="d-flex-col">
@@ -132,9 +195,11 @@
                       </div>
                     </div>
                   </div>
+                      <!-----------------------------------TESTIMONIOS Y BENEFICIOS---------------------------------->
+
                       <!-----------------------------------PLANES---------------------------------->
                       <div id="planes1"></div>
-                <div id="Planes" class="container mt-3">
+                <div id="Planes" class="container mt-3" >
                   <div>
                     <h1 class="text-center mt-5 fs-1 oleo">Planes</h1>
                   </div>
@@ -163,50 +228,69 @@
                       </div>
                   </div>
               </div>
-                <!-----------------------------------SOBRE PRESULISTO---------------------------------->
-                <div id="about1"></div>
-              <div id ="about"class="mt-5 mb-5 container-fluid" style="background-color: #BACECD;">
-                <div>
-                  <h1 class="text-center mt-5 fs-1 oleo">Sobre Presulisto</h1>
-                </div> 
-                <div class="row row-cols-1 row-cols-md-3 g-4 " id="CardsGroup">
-                  <div class="col">
-                    <div class="card h-100" id="card1">
-                        <img src="img/idea.png">
-                        <div class="card-body" id="body1">
-                            <h5 class="card-title text-center">La idea</h5>
-                            <p class="card-text text-center ">Hemos notado la Crisis económica en el Perú
-                              y La deficiente educación financiera de los usuarios, esto causo desvalances economicos en algunos hogares. Asi que desarrollamos una app para realizar presupuestos</p>
-                            </div>
-                          </div>
+              <!-------------------------------------------- PLANES ---------------------------------------->
+
+              <!-------------------------------------------- PRECIOS ---------------------------------------->
+              <div id="precios1"></div>
+              <div class="container py-5">
+                <h1 class="text-center pricing oleo">Precios</h1> </br>
+                <div class="row text-center align-items-center justify-content-center">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class="bg-white p-5 rounded-lg shadow" style = "border-radius: 35px;    border:3px solid;">
+                            <h1 class="h6 text-uppercase font-weight-bold mb-4">Basic</h1>
+                            <h2 class="h1 font-weight-bold">S/.14<span class="text-small font-weight-normal ml-2">/mes</span></h2>
+                            <div class="custom-separator my-4 mx-auto bg-warning"></div>
+                            <ul class="list-unstyled my-5 text-small text-left">
+                                <li class="mb-3"> <i class="fa fa-check mr-2 text-primary"></i> Genera Presupuestos Ilimitados</li>
+                                <li class="mb-3"> <i class="fa fa-check mr-2 text-primary"></i> Exporta en todos los formatos</li>
+                                <li class="mb-3"> <i class="fa fa-check mr-2 text-primary"></i> Acceso a Features de Testeo</li>
+                                <li class="mb-3"> <i class="fa fa-check mr-2 text-primary"></i> Acceso a la sección de Aprendizaje</li>
+                                <li class="mb-3 text-muted"> <i class="fa fa-times mr-2"></i> <del>Ayudante IA para mejora de presupuestos</del> </li>
+                                <li class="mb-3 text-muted"> <i class="fa fa-times mr-2"></i> <del>Registro de productos a través de QR</del> </li>
+                            </ul> <a href="#" class="btn btn-primary btn-block p-2 shadow rounded-pill">Suscribete Ahora</a>
                         </div>
-                        <div class="col">
-                          <div class="card h-100" id="card2">
-                        <img src="img/app.png" >
-                        <div class="card-body ">
-                          <h5 class="card-title text-center" >La ejeucion</h5>
-                          <p class="card-text text-center">Realizamos una aplicación móvil que permite realizar un presupuesto mensual en base a las necesidades del usuario</p>
-                        </div>
-                      </div>
                     </div>
-                    <div class="col">
-                      <div class="card h-100" id="card3">
-                        <img src="img/saving.png">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Nuestra meta</h5>
-                          <p class="card-text text-center">Brindar calidad y facilidad para poder controlar la economía doméstica</p>
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class="bg-white p-5 rounded-lg shadow"style = "border-radius: 35px;    border:3px solid;">
+                            <h1 class="h6 text-uppercase font-weight-bold mb-4">Full</h1>
+                            <h2 class="h1 font-weight-bold">S/.29<span class="text-small font-weight-normal ml-2">/mes</span></h2>
+                            <div class="custom-separator my-4 mx-auto bg-warning"></div>
+                            <ul class="list-unstyled my-5 text-small text-left font-weight-normal">
+                              <li class="mb-3"> <i class="fa fa-check mr-2 text-primary"></i> Genera Presupuestos Ilimitados</li>
+                              <li class="mb-3"> <i class="fa fa-check mr-2 text-primary"></i> Exporta en todos los formatos</li>
+                              <li class="mb-3"> <i class="fa fa-check mr-2 text-primary"></i> Acceso a Features de Testeo</li>
+                              <li class="mb-3"> <i class="fa fa-check mr-2 text-primary"></i> Acceso a la sección de Aprendizaje</li>
+                              <li class="mb-3"> <i class="fa fa-check mr-2 text-primary"></i> Ayudante IA para mejora de presupuestos</li>
+                              <li class="mb-3"> <i class="fa fa-check mr-2 text-primary"></i> Registro de productos a través de QR</li>
+                            </ul> <a href="#" class="btn btn-primary btn-block p-2 shadow rounded-pill">Suscribete Ahora</a>
                         </div>
-                      </div>
                     </div>
-                  </div>
+                    <!-- <div class="col-lg-4">
+                        <div class="bg-white p-5 rounded-lg shadow"style = "border-radius: 35px;">
+                            <h1 class="h6 text-uppercase font-weight-bold mb-4">Enterprise</h1>
+                            <h2 class="h1 font-weight-bold">$29<span class="text-small font-weight-normal ml-2">/ month</span></h2>
+                            <div class="custom-separator my-4 mx-auto bg-warning"></div>
+                            <ul class="list-unstyled my-5 text-small text-left font-weight-normal">
+                                <li class="mb-3"> <i class="fa fa-check mr-2 text-primary"></i> 15GB Disk Space </li>
+                                <li class="mb-3"> <i class="fa fa-check mr-2 text-primary"></i> 15 Email Accounts </li>
+                                <li class="mb-3"> <i class="fa fa-check mr-2 text-primary"></i> 15GB Monthly Bandwidth</li>
+                                <li class="mb-3"> <i class="fa fa-check mr-2 text-primary"></i> Unlimited Subdomains</li>
+                                <li class="mb-3"> <i class="fa fa-check mr-2 text-primary"></i> Automatic Cloud Backup</li>
+                            </ul> <a href="#" class="btn btn-primary btn-block p-2 shadow rounded-pill">Subscribe</a>
+                        </div>
+                    </div> -->
                 </div>
+            </div>
+              <!-------------------------------------------- PRECIOS ---------------------------------------->
+
+
 
                 <!-----------------------------------CONTACTO---------------------------------->
                 <div id="contacto1"></div>
                 <div id ="Contacto"class="container-fluid mt-2 mb-5">
-                  <div class="container">
+                  <div class="container"style ="background-color: white; border-radius:25px;    border:3px solid;">
                     <div>
-                      <h2 class="text-center mb-15 shadow-sm p-5">Contacto</h2>
+                      <h2 class="text-center mb-15 p-5">Contacto</h2>
                     </div>
             
                     <div class="row">
@@ -307,6 +391,22 @@
                     </div>
                   </div>
                 </div>
+                <!-----------------------------------CONTACTO---------------------------------->
+                <div class = "container-fluid p-2">
+                  <div class = "row justify-content-center">
+                    <h1 class="text-center pricing oleo">Videos</h1> </br>
+                    
+                    <div class="col-md-4 mt-5 mb-5 mx-auto">
+                      <iframe width="500" height="450" src="https://www.youtube.com/embed/hyf0Fh6mE5w" title="YouTube video player" 
+                      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-4 mt-5 mb-5 mx-auto">
+                      <iframe width="500" height="450" src="https://www.youtube.com/embed/yvW1hydkgjU" title="YouTube video player" 
+                      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+
                 <!-- ------------------------------------------------------FOOTER------------------------------------------------------ -->
                 <footer
           class="text-center text-lg-start text-white"
@@ -350,7 +450,7 @@
             <ul class="list-unstyled mb-0">
               <li>
                 <p class="text-white">
-                  <i class="bi bi-house"></i> Av. Tomas Valle 1418 - S.M.P.</p>
+                  <i class="bi bi-house"></i> Av. Tomas Valle 9999 - S.M.P.</p>
               </li>
               <li>
                 <p class="text-white">
